@@ -1,0 +1,42 @@
+[
+  {
+    "title": "SauceDemo E2E Testing Framework",
+    "description": "End-to-end test automation framework using Playwright, TypeScript, and POM to validate login, cart, checkout, and sorting functionalities.",
+    "tech": ["Playwright", "TypeScript", "POM"],
+    "category": "QA",
+    "gradient": "from-emerald-500 to-teal-500",
+    "github": "https://github.com/waleedarman/SauceDemo-E2E-Testing-Playwright.git"
+  },
+  {
+    "title": "🌐 Maqal Panorama",
+    "description": "Maqal Panorama is a Palestinian digital platform for publishing articles and thoughtful writing across various fields including technology, education, healthcare, culture, art, and social issues.",
+    "tech": ["Django", "SQLite", "HTML Templates"],
+    "category": "Backend APP",
+    "gradient": "from-indigo-500 to-purple-500",
+    "github": "https://github.com/Ahmad-IR122/Maqal-final-Project"
+  },
+  {
+    "title": "🎬 Movies App",
+    "description": "A modern Movies Web Application built with React.js as part of my Front-End Internship at ITG. The application allows users to explore movies using the TMDB API, including popular, now playing, and upcoming movies, with search functionality and detailed movie pages.",
+    "tech": ["React.js", "TMDB API"],
+    "category": "Frontend APP",
+    "gradient": "from-purple-500 to-pink-500",
+    "github": "https://github.com/Ahmad-IR122/Movie-react-project-API"
+  },
+  {
+    "title": " TwiStream",
+    "description": "This project implements a complete data pipeline for processing and visualizing tweets in real-time. It ingests streaming tweets, processes the data using Apache Kafka and Elasticsearch, and visualizes the results with Kibana.",
+    "tech": ["Apache Kafka", "Elasticsearch", "Kibana","Hadoop","Apache Spark"],
+    "category": "Big Data Eingineering Project",
+    "gradient": "from-cyan-500 to-blue-500",
+    "github": "https://github.com/fasahili/TwiStream"
+  },
+  {
+    "title": " Software Testing & Quality Assurance - QA Assignment",
+    "description": "The assignment focuses on applying unit testing best practices using JUnit 5, including lifecycle hooks, parameterized tests, test suites, ordered execution, parallel execution, and test coverage analysis.",
+    "tech": ["JUnit 5", "Java", "Test Automation"],
+    "category": "QA",
+    "gradient": "from-pink-500 to-rose-500",
+    "link": "https://github.com/Ahmad-IR122/QA-Assignments"
+  }
+]

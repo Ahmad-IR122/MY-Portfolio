@@ -1,0 +1,26 @@
+[
+  {
+    "title": "Programming Languages",
+    "skills": ["C", "C++",  "Java", "Python", "SQL", "JavaScript", "TypeScript", "Scala"]
+  },
+  {
+    "title": "Frontend",
+    "skills": ["HTML & CSS", "SASS","LESS", "JSX", "React.js", "Bootstrap", "Tailwind CSS", "Vite"]
+  },
+  {
+    "title": "Backend",
+    "skills": ["Node.js", "Django", "REST APIs", "Next.js"]
+  },
+  {
+    "title": "Databases",
+    "skills": ["SQL","MySQL", "MongoDB","PostgreSQL","SQLite3", "Firebase"]
+  },
+  {
+    "title": "Tools & Technologies",
+    "skills": ["Git", "GitHub", "Figma", "Canva", "Jira", "Trello", "Vercel", "Postman" , "Hadoop", "Apache Spark"]
+  },
+  {
+    "title": "AI & ML",
+    "skills": ["AI Fundamentals", "Machine Learning", "ChatGPT", "LLMs", "Generative AI", "AI Ethics"]
+  }
+]
