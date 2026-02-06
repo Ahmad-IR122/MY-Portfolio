@@ -57,7 +57,6 @@ A modern, responsive 3D portfolio website showcasing my skills and experience as
 │   │   ├── CertificationsSection.jsx
 │   │   ├── EducationSection.jsx
 │   │   ├── InternshipsSection.jsx
-│   │   └── LanguagesSection.jsx
 │   │
 │   ├── App.css
 │   ├── App.jsx

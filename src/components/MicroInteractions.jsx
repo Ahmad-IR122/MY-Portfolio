@@ -117,8 +117,8 @@ export function GlowCursor({ children, className = "" }) {
     >
       <div
         ref={glowRef}
-        className="absolute w-[300px] h-[300px] rounded-full bg-gradient-to-r from-indigo-500/20 to-purple-500/20 blur-3xl pointer-events-none opacity-0 group-hover:opacity-100 transition-opacity duration-300"
-        style={{ transform: 'translate(-50%, -50%)' }}
+        className="absolute w-[300px] h-[300px] rounded-full blur-3xl pointer-events-none opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+        style={{ background: 'linear-gradient(90deg, rgba(56,189,248,0.12), rgba(34,211,238,0.08))', transform: 'translate(-50%, -50%)' }}
       />
       {children}
     </div>

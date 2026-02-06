@@ -19,6 +19,29 @@ body {
   overflow-x: hidden;
 }
 
+:root {
+  --gradient-top: #05050a;
+  --gradient-mid: #0a0f3d;
+  --gradient-bottom: #141b6b;
+  --accent-cyan: #38bdf8;
+  --accent-cyan-2: #22d3ee;
+  --glass-bg: rgba(255,255,255,0.05);
+  --glass-border: rgba(255,255,255,0.1);
+  --body-text: #cbd5e1;
+  --muted-text: #94a3b8;
+  /* Legacy vars for Timeline.css and other components */
+  --accent-primary: #38bdf8;
+  --accent-secondary: #22d3ee;
+  --accent-tertiary: #60a5fa;
+  --accent-qa: #22d3ee;
+  --accent-icon: #0ea5e9;
+  --bg-primary: rgba(10,10,15,0.5);
+  --text-primary: #ffffff;
+  --text-secondary: #cbd5e1;
+  --text-muted: #94a3b8;
+  --gradient-primary: linear-gradient(90deg, var(--accent-primary), var(--accent-secondary));
+}
+
 ::-webkit-scrollbar {
   width: 8px;
 }
@@ -34,18 +57,36 @@ body {
 
 @layer utilities {
   .text-gradient {
-    @apply bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 bg-clip-text text-transparent;
+    background: linear-gradient(90deg, var(--accent-primary), var(--accent-secondary));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
   }
   
   .glass {
-    @apply bg-white/5 backdrop-blur-xl border border-white/10;
+    background: var(--glass-bg);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid var(--glass-border);
+    /* keep Tailwind utilities available for spacing */
   }
   
   .glow {
-    box-shadow: 0 0 40px rgba(99, 102, 241, 0.3);
+    box-shadow: 0 0 28px rgba(56, 189, 248, 0.18); /* cyan soft glow */
   }
   
   .glow-strong {
-    box-shadow: 0 0 60px rgba(99, 102, 241, 0.5);
+    box-shadow: 0 0 48px rgba(34, 211, 238, 0.22);
+  }
+
+  .section-gradient {
+    background: linear-gradient(180deg, var(--gradient-top) 0%, var(--gradient-mid) 50%, var(--gradient-bottom) 100%);
+  }
+  .section-gradient-dark {
+    background: linear-gradient(180deg, #040407 0%, #07092b 50%, #0f1350 100%);
+  }
+  .section-gradient-light {
+    background: linear-gradient(180deg, #07070b 0%, #09123f 50%, #18257f 100%);
   }
 }

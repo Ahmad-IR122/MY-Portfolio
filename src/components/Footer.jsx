@@ -27,7 +27,7 @@ export default function Footer() {
         <a href="#home" className="text-xl font-bold">
           <span className="text-gradient">Ahmad Irshaid</span>
         </a>
-        <p className="text-gray-500 text-sm">
+        <p className="text-[var(--body-text)] text-sm">
           © 2026 Ahmad Irshaid. Crafted with passion and precision.
         </p>
         <div className="flex gap-4">
@@ -35,7 +35,7 @@ export default function Footer() {
             <a
               key={i}
               href={href}
-              className={`text-gray-500 ${color} transition-colors`}
+              className={`text-[var(--muted-text)] hover:text-white hover:border-[var(--accent-cyan)] transition-colors`}
             >
               <Icon size={18} />
             </a>

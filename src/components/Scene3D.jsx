@@ -140,7 +140,7 @@ function ParticleField() {
       </bufferGeometry>
       <pointsMaterial
         size={0.05}
-        color="#6366f1"
+        color="#38bdf8"
         transparent
         opacity={0.8}
         sizeAttenuation
@@ -152,10 +152,10 @@ function ParticleField() {
 function Fallback() {
   return (
     <div className="w-full h-full flex items-center justify-center relative overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-br from-indigo-900/20 via-purple-900/20 to-pink-900/20" />
-      <div className="absolute w-96 h-96 rounded-full bg-gradient-to-r from-indigo-500/20 to-purple-500/20 blur-3xl animate-pulse" />
-      <div className="absolute w-64 h-64 rounded-full bg-gradient-to-r from-purple-500/20 to-pink-500/20 blur-3xl animate-pulse" style={{ animationDelay: '1s', top: '20%', left: '60%' }} />
-      <div className="absolute w-48 h-48 rounded-full bg-gradient-to-r from-cyan-500/20 to-blue-500/20 blur-3xl animate-pulse" style={{ animationDelay: '2s', bottom: '20%', right: '60%' }} />
+      <div className="absolute inset-0" style={{background: 'linear-gradient(180deg, rgba(5,5,10,0.6), rgba(10,15,61,0.4))'}} />
+      <div className="absolute w-96 h-96 rounded-full blur-3xl animate-pulse" style={{ background: 'linear-gradient(90deg, rgba(56,189,248,0.06), rgba(34,211,238,0.04))' }} />
+      <div className="absolute w-64 h-64 rounded-full blur-3xl animate-pulse" style={{ background: 'linear-gradient(90deg, rgba(34,211,238,0.06), rgba(56,189,248,0.04))', animationDelay: '1s', top: '20%', left: '60%' }} />
+      <div className="absolute w-48 h-48 rounded-full blur-3xl animate-pulse" style={{ background: 'linear-gradient(90deg, rgba(56,189,248,0.05), rgba(34,211,238,0.03))', animationDelay: '2s', bottom: '20%', right: '60%' }} />
     </div>
   )
 }
@@ -180,13 +180,13 @@ function Scene3DCanvas() {
       <ambientLight intensity={0.2} />
       <directionalLight position={[10, 10, 5]} intensity={1} color="#ffffff" />
       <pointLight position={[-5, 5, 5]} intensity={0.5} color="#6366f1" />
-      <pointLight position={[5, -5, 5]} intensity={0.5} color="#a855f7" />
+      <pointLight position={[5, -5, 5]} intensity={0.5} color="#22d3ee" />
       
-      <AnimatedSphere position={[0, 0, 0]} color="#6366f1" distort={0.5} />
-      <GlowingTorus position={[3, 1, -2]} color="#8b5cf6" rotationSpeed={0.7} />
-      <GlowingTorus position={[-3, -1, -2]} color="#a855f7" rotationSpeed={0.5} />
-      <FloatingCube position={[2.5, -1.5, 1]} color="#ec4899" size={0.6} />
-      <FloatingCube position={[-2.5, 1.5, 1]} color="#10b981" size={0.5} />
+      <AnimatedSphere position={[0, 0, 0]} color="#38bdf8" distort={0.5} />
+      <GlowingTorus position={[3, 1, -2]} color="#22d3ee" rotationSpeed={0.7} />
+      <GlowingTorus position={[-3, -1, -2]} color="#60a5fa" rotationSpeed={0.5} />
+      <FloatingCube position={[2.5, -1.5, 1]} color="#22d3ee" size={0.6} />
+      <FloatingCube position={[-2.5, 1.5, 1]} color="#38bdf8" size={0.5} />
       
       <ParticleField />
       <Stars radius={50} depth={50} count={1000} factor={4} fade speed={1} />
