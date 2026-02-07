@@ -11,7 +11,8 @@ export default function Projects() {
       <div className="max-w-7xl mx-auto px-6">
         <AnimatedSection className="text-center mb-16">
           <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass text-[var(--body-text)] text-sm font-medium mb-4">
-            My Work
+            <Sparkles size={16} className="text-[var(--accent-cyan)]" />
+            Featured Projects
           </span>
           <h2 className="text-4xl lg:text-5xl font-bold mb-4 text-white">Featured Projects</h2>
           <div className="w-20 h-1 bg-accent-cyan mx-auto rounded" />
