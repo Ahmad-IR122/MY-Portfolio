@@ -95,7 +95,7 @@ The app runs on `http://localhost:5000`
 - **Phone**: +972 594651900
 - **Location**: Jenin, Palestine
 - **LinkedIn**: [Ahmad-Irshaid](https://www.linkedin.com/in/ahmadikirshaid/)
-- **GitHub**: [waleedarman](https://github.com/Ahmad-IR122)
+- **GitHub**: [Ahmad Irshaid](https://github.com/Ahmad-IR122)
 
 ## License
 
