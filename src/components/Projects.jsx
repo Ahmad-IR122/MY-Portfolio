@@ -1,7 +1,7 @@
 import AnimatedSection, { StaggerChildren } from './AnimatedSection'
 import { TiltCard } from './MicroInteractions'
 import projectsData from '../projects.json'
-import { Github } from 'lucide-react'
+import { Github, Sparkles } from 'lucide-react'
 
 export default function Projects() {
   const projects = projectsData

@@ -1,7 +1,7 @@
 import AnimatedSection, { StaggerChildren } from './AnimatedSection'
 import { TiltCard } from './MicroInteractions'
 import servicesData from '../services.json'
-import { Code2, TestTube2, Layers, Cpu, Database } from 'lucide-react'
+import { Code2, TestTube2, Layers, Cpu, Database, Sparkles } from 'lucide-react'
 
 const iconMap = { Code2, TestTube2, Layers, Cpu, Database }
 
