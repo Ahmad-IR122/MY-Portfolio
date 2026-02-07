@@ -1,7 +1,7 @@
 import AnimatedSection, { StaggerChildren } from './AnimatedSection'
 import { TiltCard } from './MicroInteractions'
 import projectsData from '../projects.json'
-import { Github, ExternalLink } from 'lucide-react'
+import { Github } from 'lucide-react'
 
 export default function Projects() {
   const projects = projectsData
@@ -38,11 +38,7 @@ export default function Projects() {
                         <Github size={18} />
                       </a>
                     )}
-                    {project.link && (
-                      <a href={project.link} target="_blank" rel="noopener noreferrer" className="w-10 h-10 flex items-center justify-center rounded-xl bg-[rgba(255,255,255,0.03)] text-[var(--muted-text)] hover:text-white hover:border-[var(--accent-cyan)] transition-all duration-300">
-                        <ExternalLink size={18} />
-                      </a>
-                    )}
+                    {/* External link icon removed per request */}
                   </div>
                 </div>
                 <h3 className="text-xl font-semibold mb-3 text-white group-hover:glow transition-all duration-300">{project.title}</h3>

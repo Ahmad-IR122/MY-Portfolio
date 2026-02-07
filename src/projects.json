@@ -37,6 +37,14 @@
     "tech": ["JUnit 5", "Java", "Test Automation"],
     "category": "QA",
     "gradient": "from-pink-500 to-rose-500",
-    "link": "https://github.com/Ahmad-IR122/QA-Assignments"
+    "github": "https://github.com/Ahmad-IR122/QA-Assignments"
+  },
+  {
+    "title": " UDP-and-TCP-Implementation",
+    "description": "This project demonstrates both UDP (User Datagram Protocol) and TCP (Transmission Control Protocol) networking implementations in Java. It includes client-server applications for both protocols, showcasing the differences in connection handling, reliability, and communication patterns.",
+    "tech": ["Java", "Networking", "UDP", "TCP"],
+    "category": "Networking",
+    "gradient": "from-pink-500 to-rose-500",
+    "github": "https://github.com/Ahmad-IR122/-UDP-and-TCP-Implementation"
   }
 ]
