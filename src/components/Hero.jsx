@@ -84,7 +84,7 @@ export default function Hero() {
             >
               <RippleButton className="group flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-[#38bdf8] to-[#22d3ee] rounded-xl font-semibold transition-all duration-300 hover:shadow-lg hover:shadow-[0_12px_24px_rgba(34,211,238,0.12)] hover:-translate-y-1">
                 <Download size={18} />
-                <span>Download CV</span>
+                <span>View CV</span>
               </RippleButton>
             </a>
 
