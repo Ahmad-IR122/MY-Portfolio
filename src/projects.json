@@ -1,6 +1,6 @@
 [
   {
-    "title": "SauceDemo E2E Testing Framework",
+    "title": "🧪 SauceDemo E2E Testing Framework",
     "description": "End-to-end test automation framework using Playwright, TypeScript, and POM to validate login, cart, checkout, and sorting functionalities.",
     "tech": ["Playwright", "TypeScript", "POM"],
     "category": "QA",
@@ -24,27 +24,27 @@
     "github": "https://github.com/Ahmad-IR122/Movie-react-project-API"
   },
   {
-    "title": " TwiStream",
+    "title": "🕊️ TwiStream",
     "description": "This project implements a complete data pipeline for processing and visualizing tweets in real-time. It ingests streaming tweets, processes the data using Apache Kafka and Elasticsearch, and visualizes the results with Kibana.",
     "tech": ["Apache Kafka", "Elasticsearch", "Kibana","Hadoop","Apache Spark"],
-    "category": "Big Data Eingineering Project",
+    "category": "Big Data Engineering Project",
     "gradient": "from-cyan-500 to-blue-500",
     "github": "https://github.com/fasahili/TwiStream"
   },
   {
-    "title": " Software Testing & Quality Assurance - QA Assignment",
-    "description": "The assignment focuses on applying unit testing best practices using JUnit 5, including lifecycle hooks, parameterized tests, test suites, ordered execution, parallel execution, and test coverage analysis.",
-    "tech": ["JUnit 5", "Java", "Test Automation"],
-    "category": "QA",
-    "gradient": "from-pink-500 to-rose-500",
-    "github": "https://github.com/Ahmad-IR122/QA-Assignments"
-  },
-  {
-    "title": " UDP-and-TCP-Implementation",
+    "title": "🛜 UDP-and-TCP-Implementation",
     "description": "This project demonstrates both UDP (User Datagram Protocol) and TCP (Transmission Control Protocol) networking implementations in Java. It includes client-server applications for both protocols, showcasing the differences in connection handling, reliability, and communication patterns.",
     "tech": ["Java", "Networking", "UDP", "TCP"],
     "category": "Networking",
     "gradient": "from-pink-500 to-rose-500",
     "github": "https://github.com/Ahmad-IR122/-UDP-and-TCP-Implementation"
+  },
+  {
+    "title": "🖼️ Image Processing API Project",
+    "description": "A simple and efficient Node.js + Express + TypeScript API for resizing images on demand using Sharp. The API reads original images from assets/images, generates resized versions, stores them in a cache folder, and returns the processed image to the client. ",
+    "tech": ["Node.js", "Express", "TypeScript", "Sharp"],
+    "category": "Backend APP",
+    "gradient": "from-green-500 to-lime-500",
+    "github": "https://github.com/Ahmad-IR122/image-Processing-API-project"
   }
 ]

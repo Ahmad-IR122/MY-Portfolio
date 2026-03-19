@@ -77,7 +77,7 @@ export default function Hero() {
 
           <div className="hero-text flex flex-wrap gap-4 mb-10">
             <a
-              href="https://drive.google.com/file/d/17h25TGPMpxMEIt6N9SL-9mH5z1JA_Zvg/view?usp=sharing"
+              href="https://drive.google.com/file/d/17h25TGPMpxMEIt6N9SL-9mH5z1JA_Zvg/view"
               target="_blank"
               rel="noopener noreferrer"
               
