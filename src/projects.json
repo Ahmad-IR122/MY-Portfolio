@@ -1,5 +1,14 @@
 [
   {
+    "title" : "🚚 Phoenix Express for delivery and logistics management ",
+    "description" : "full-stack delivery management platform built with PostgreSQL, Express, React, and Node.js. It supports multi-role workflows (customer/company, employee, and admin), shipment tracking, delivery operations, settlements/wallet flows, content management, newsletters, support chat, and notifications.", 
+    "tech" : ["PostgreSQL", "Express", "React", "Node.js"],
+    "category" : "Full Stack APP",
+    "gradient" : "from-blue-500 to-green-500",
+    "github" : "https://github.com/Ahmad-IR122/Phoenix-Express",
+    "link": "https://phonix-front.netlify.app"
+  },
+  {
     "title": "🧪 SauceDemo E2E Testing Framework",
     "description": "End-to-end test automation framework using Playwright, TypeScript, and POM to validate login, cart, checkout, and sorting functionalities.",
     "tech": ["Playwright", "TypeScript", "POM"],
