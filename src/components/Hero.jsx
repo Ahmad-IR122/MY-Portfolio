@@ -86,7 +86,7 @@ export default function Hero() {
 
           <div className="hero-text flex flex-wrap gap-4 mb-10">
             <RippleButton
-              onClick={() => window.open('https://drive.google.com/file/d/17h25TGPMpxMEIt6N9SL-9mH5z1JA_Zvg/view', '_blank', 'noopener,noreferrer')}
+              onClick={() => window.open('https://drive.google.com/file/d/1cVDg47MASfsYY57Orytt0CsZBir5KiSy/view?usp=sharing', '_blank', 'noopener,noreferrer')}
               className="group relative flex items-center gap-2 px-8 py-4 rounded-xl font-semibold transition-all duration-300 bg-[linear-gradient(135deg,#2563eb,#3b82f6)] shadow-lg shadow-blue-900/25 hover:shadow-xl hover:shadow-blue-900/30 hover:-translate-y-1"
             >
               <Download size={18} />
