@@ -32,25 +32,25 @@
 .section-block.primary {
   --section-color: var(--accent-primary);
   --section-gradient: linear-gradient(180deg, var(--accent-primary), var(--accent-secondary));
-  --section-glow: rgba(99, 102, 241, 0.4);
+  --section-glow: rgba(37, 99, 235, 0.34);
 }
 
 .section-block.secondary {
   --section-color: var(--accent-secondary);
   --section-gradient: linear-gradient(180deg, var(--accent-secondary), var(--accent-tertiary));
-  --section-glow: rgba(139, 92, 246, 0.4);
+  --section-glow: rgba(59, 130, 246, 0.34);
 }
 
 .section-block.tertiary {
   --section-color: var(--accent-tertiary);
-  --section-gradient: linear-gradient(180deg, var(--accent-tertiary), #ec4899);
-  --section-glow: rgba(168, 85, 247, 0.4);
+  --section-gradient: linear-gradient(180deg, var(--accent-tertiary), #93c5fd);
+  --section-glow: rgba(96, 165, 250, 0.32);
 }
 
 .section-block.qa {
   --section-color: var(--accent-qa);
-  --section-gradient: linear-gradient(180deg, var(--accent-qa), #14b8a6);
-  --section-glow: rgba(16, 185, 129, 0.4);
+  --section-gradient: linear-gradient(180deg, var(--accent-qa), #22d3ee);
+  --section-glow: rgba(20, 184, 166, 0.34);
 }
 
 .section-title-row {
@@ -75,11 +75,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(135deg, rgba(56,189,248,0.12), rgba(34,211,238,0.08));
+  background: linear-gradient(135deg, rgba(37,99,235,0.12), rgba(96,165,250,0.08));
   border: 2px solid var(--section-color);
   border-radius: 16px;
   color: var(--section-color);
-  box-shadow: 0 0 40px rgba(56,189,248,0.12);
+  box-shadow: 0 0 40px rgba(37,99,235,0.12);
 }
 
 /* Ensure SVG icons are perfectly centered inside square/round containers */
@@ -199,7 +199,7 @@
   border: 4px solid var(--section-color, var(--accent-primary));
   border-radius: 50%;
   z-index: 2;
-  box-shadow: 0 0 20px var(--section-glow, rgba(56,189,248,0.4));
+  box-shadow: 0 0 20px var(--section-glow, rgba(37,99,235,0.34));
 }
 
 .timeline-card.left .timeline-dot {
@@ -267,8 +267,8 @@
 
 .glass-card:hover {
   transform: translateY(-6px);
-  border-color: var(--section-color, rgba(56,189,248,0.5));
-  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.4), 0 0 50px rgba(56,189,248,0.12);
+  border-color: var(--section-color, rgba(37,99,235,0.5));
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.4), 0 0 50px rgba(37,99,235,0.12);
 }
 
 .glass-card:hover::before {
@@ -349,13 +349,13 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(135deg, rgba(56,189,248,0.08), rgba(34,211,238,0.06));
+  background: linear-gradient(135deg, rgba(37,99,235,0.08), rgba(96,165,250,0.06));
   border: 2px solid rgba(255,255,255,0.06);
   border-radius: 16px;
   font-weight: 800;
   font-size: 1.2rem;
   color: var(--accent-icon);
-  box-shadow: 0 0 24px rgba(56,189,248,0.08);
+  box-shadow: 0 0 24px rgba(37,99,235,0.08);
 }
 
 .internship-details h4 {
@@ -416,11 +416,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(135deg, rgba(56,189,248,0.08), rgba(34,211,238,0.06));
+  background: linear-gradient(135deg, rgba(37,99,235,0.08), rgba(96,165,250,0.06));
   border: 2px solid rgba(255,255,255,0.06);
   border-radius: 16px;
   color: var(--accent-icon);
-  box-shadow: 0 0 24px rgba(56,189,248,0.08);
+  box-shadow: 0 0 24px rgba(37,99,235,0.08);
 }
 
 .edu-details h4 {
@@ -466,7 +466,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(135deg, rgba(56,189,248,0.08), rgba(34,211,238,0.06));
+  background: linear-gradient(135deg, rgba(37,99,235,0.08), rgba(96,165,250,0.06));
   border: 2px solid rgba(255,255,255,0.06);
   border-radius: 14px;
   color: var(--accent-icon);
@@ -484,7 +484,7 @@
   background: var(--accent-primary);
   border-radius: 50%;
   color: white;
-  box-shadow: 0 4px 12px rgba(56,189,248,0.18);
+  box-shadow: 0 4px 12px rgba(37,99,235,0.18);
 }
 
 .cert-info {

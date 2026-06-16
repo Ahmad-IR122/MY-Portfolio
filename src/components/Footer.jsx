@@ -5,25 +5,22 @@ export default function Footer() {
     {
       icon: Github,
       label: "GitHub",
-      color: "hover:border-gray-400",
       href: "https://github.com/Ahmad-IR122",
     },
     {
       icon: Linkedin,
       label: "LinkedIn",
-      color: "hover:border-blue-500",
       href: "https://www.linkedin.com/in/ahmadikirshaid/",
     },
     {
       icon: Twitter,
       label: "Twitter",
-      color: "hover:border-sky-400",
       href: "https://x.com/A_Kakashi99",
     }
   ];
   return (
-    <footer className="py-8 border-t border-white/10">
-      <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-4">
+    <footer className="py-8 border-t border-white/10 bg-black/10">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 flex flex-col md:flex-row items-center justify-between gap-4">
         <a href="#home" className="text-xl font-bold">
           <span className="text-gradient">Ahmad Irshaid</span>
         </a>
@@ -31,11 +28,12 @@ export default function Footer() {
           © 2026 Ahmad Irshaid. Crafted with passion and precision.
         </p>
         <div className="flex gap-4">
-          {obj.map(({ icon: Icon, href, color }, i) => (
+          {obj.map(({ icon: Icon, href, label }, i) => (
             <a
               key={i}
               href={href}
-              className={`text-[var(--muted-text)] hover:text-white hover:border-[var(--accent-cyan)] transition-colors`}
+              aria-label={label}
+              className="text-[var(--muted-text)] hover:text-white hover:border-[var(--accent-cyan)] transition-colors"
             >
               <Icon size={18} />
             </a>

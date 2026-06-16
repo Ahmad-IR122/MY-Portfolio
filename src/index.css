@@ -14,28 +14,37 @@ html {
 
 body {
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-  background-color: #0a0a0f;
+  background:
+    radial-gradient(circle at top, rgba(37, 99, 235, 0.16), transparent 34%),
+    radial-gradient(circle at 20% 20%, rgba(59, 130, 246, 0.1), transparent 24%),
+    linear-gradient(180deg, #09090b 0%, #0f172a 52%, #020617 100%);
   color: #ffffff;
   overflow-x: hidden;
+  min-height: 100vh;
+}
+
+body::selection {
+  background: rgba(37, 99, 235, 0.28);
+  color: #fff;
 }
 
 :root {
-  --gradient-top: #05050a;
-  --gradient-mid: #0a0f3d;
-  --gradient-bottom: #141b6b;
-  --accent-cyan: #38bdf8;
-  --accent-cyan-2: #22d3ee;
-  --glass-bg: rgba(255,255,255,0.05);
-  --glass-border: rgba(255,255,255,0.1);
+  --gradient-top: #09090b;
+  --gradient-mid: #0f172a;
+  --gradient-bottom: #111827;
+  --accent-cyan: #2563eb;
+  --accent-cyan-2: #60a5fa;
+  --glass-bg: rgba(15, 23, 42, 0.74);
+  --glass-border: rgba(148, 163, 184, 0.14);
   --body-text: #cbd5e1;
   --muted-text: #94a3b8;
   /* Legacy vars for Timeline.css and other components */
-  --accent-primary: #38bdf8;
-  --accent-secondary: #22d3ee;
+  --accent-primary: #2563eb;
+  --accent-secondary: #3b82f6;
   --accent-tertiary: #60a5fa;
-  --accent-qa: #22d3ee;
-  --accent-icon: #0ea5e9;
-  --bg-primary: rgba(10,10,15,0.5);
+  --accent-qa: #14b8a6;
+  --accent-icon: #38bdf8;
+  --bg-primary: rgba(10, 10, 10, 0.5);
   --text-primary: #ffffff;
   --text-secondary: #cbd5e1;
   --text-muted: #94a3b8;
@@ -47,12 +56,25 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-  background: #0a0a0f;
+  background: #0a0a0a;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(180deg, #6366f1, #a855f7);
+  background: linear-gradient(180deg, #2563eb, #60a5fa);
   border-radius: 4px;
+}
+
+a,
+button,
+input,
+textarea,
+summary {
+  transition: color 180ms ease, border-color 180ms ease, background-color 180ms ease, box-shadow 180ms ease, transform 180ms ease;
+}
+
+:focus-visible {
+  outline: 2px solid rgba(96, 165, 250, 0.9);
+  outline-offset: 3px;
 }
 
 @layer utilities {
@@ -66,27 +88,26 @@ body {
   
   .glass {
     background: var(--glass-bg);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
     border: 1px solid var(--glass-border);
-    /* keep Tailwind utilities available for spacing */
   }
   
   .glow {
-    box-shadow: 0 0 28px rgba(56, 189, 248, 0.18); /* cyan soft glow */
+    box-shadow: 0 0 28px rgba(37, 99, 235, 0.18);
   }
   
   .glow-strong {
-    box-shadow: 0 0 48px rgba(34, 211, 238, 0.22);
+    box-shadow: 0 0 48px rgba(96, 165, 250, 0.22);
   }
 
   .section-gradient {
     background: linear-gradient(180deg, var(--gradient-top) 0%, var(--gradient-mid) 50%, var(--gradient-bottom) 100%);
   }
   .section-gradient-dark {
-    background: linear-gradient(180deg, #040407 0%, #07092b 50%, #0f1350 100%);
+    background: linear-gradient(180deg, #050505 0%, #0f172a 50%, #111827 100%);
   }
   .section-gradient-light {
-    background: linear-gradient(180deg, #07070b 0%, #09123f 50%, #18257f 100%);
+    background: linear-gradient(180deg, #06070b 0%, #0b1220 50%, #172554 100%);
   }
 }

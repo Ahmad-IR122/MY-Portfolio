@@ -47,7 +47,7 @@ export default function AnimatedSection({
     
     const anim = animations[animation] || animations.fadeUp
     
-    gsap.fromTo(el, anim.from, {
+    const tween = gsap.fromTo(el, anim.from, {
       ...anim.to,
       duration,
       delay,
@@ -60,7 +60,8 @@ export default function AnimatedSection({
     })
     
     return () => {
-      ScrollTrigger.getAll().forEach(trigger => trigger.kill())
+      tween.scrollTrigger?.kill()
+      tween.kill()
     }
   }, [animation, delay, duration])
   
@@ -71,8 +72,9 @@ export default function AnimatedSection({
   )
 }
 
-export function StaggerChildren({ children, className = "", stagger = 0.1 }) {
+export function StaggerChildren({ children, className = "", stagger = 0.1, staggerDelay }) {
   const containerRef = useRef(null)
+  const resolvedStagger = typeof staggerDelay === 'number' ? staggerDelay / 1000 : stagger
   
   useEffect(() => {
     const el = containerRef.current
@@ -80,13 +82,13 @@ export function StaggerChildren({ children, className = "", stagger = 0.1 }) {
     
     const items = el.children
     
-    gsap.fromTo(items, 
+    const tween = gsap.fromTo(items, 
       { opacity: 0, y: 40 },
       {
         opacity: 1,
         y: 0,
         duration: 0.8,
-        stagger,
+        stagger: resolvedStagger,
         ease: "power3.out",
         scrollTrigger: {
           trigger: el,
@@ -97,9 +99,10 @@ export function StaggerChildren({ children, className = "", stagger = 0.1 }) {
     )
     
     return () => {
-      ScrollTrigger.getAll().forEach(trigger => trigger.kill())
+      tween.scrollTrigger?.kill()
+      tween.kill()
     }
-  }, [stagger])
+  }, [resolvedStagger])
   
   return (
     <div ref={containerRef} className={className}>

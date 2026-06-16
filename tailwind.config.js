@@ -7,32 +7,27 @@ export default {
   theme: {
     extend: {
       colors: {
-        // Accent / theme colors (used across components)
         accent: {
-          cyan: '#38bdf8',
-          light: '#22d3ee'
+          cyan: '#2563eb',
+          light: '#60a5fa'
         },
-        // Navbar-only black
-        navbarBlack: '#000000',
-        // Section gradient stops for hero / about / projects
+        navbarBlack: '#0a0a0a',
         gradient: {
-          top: '#05050a',   // near black
-          mid: '#0a0f3d',   // deep navy
-          bottom: '#141b6b' // blue
+          top: '#09090b',
+          mid: '#0f172a',
+          bottom: '#111827'
         },
-        // Glassmorphism helpers
         glass: {
-          bg: 'rgba(255,255,255,0.05)',
-          border: 'rgba(255,255,255,0.1)'
+          bg: 'rgba(15, 23, 42, 0.74)',
+          border: 'rgba(148, 163, 184, 0.14)'
         },
-        // Text tones
         body: '#cbd5e1', // light gray
         muted: '#94a3b8',
         dark: {
-          100: '#1a1a28',
-          200: '#151520',
-          300: '#0f0f17',
-          400: '#0a0a0f',
+          100: '#1f2937',
+          200: '#111827',
+          300: '#0f172a',
+          400: '#0a0a0a',
         }
       },
       fontFamily: {

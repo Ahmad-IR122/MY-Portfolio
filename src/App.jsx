@@ -14,7 +14,7 @@ import CertificationsSection from './sections/CertificationsSection'
 export default function App() {
   return (
     <>
-      <div className="min-h-screen bg-dark-400 text-white overflow-x-hidden">
+      <div className="min-h-screen bg-dark-400 text-white overflow-x-hidden relative isolate antialiased">
         <Navbar />
         <Hero />
         <About />

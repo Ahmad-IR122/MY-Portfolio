@@ -9,23 +9,23 @@ export default function Services() {
   const services = servicesData
 
   return (
-    <section id="services" className="py-24 section-gradient-light">
-      <div className="max-w-7xl mx-auto px-6">
-        <AnimatedSection className="text-center mb-16">
+    <section id="services" className="py-24 section-gradient-light overflow-hidden">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6">
+        <AnimatedSection className="text-center mb-16 max-w-3xl mx-auto">
         <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass text-[var(--body-text)] text-sm font-medium mb-4">
             <Sparkles size={16} className="text-[var(--accent-cyan)]" />
             What I Do
           </span>
           <h2 className="text-4xl lg:text-5xl font-bold mb-4 text-white">My Services</h2>
-          <div className="w-20 h-1 bg-accent-cyan mx-auto rounded" />
+          <div className="w-20 h-1 bg-[var(--accent-cyan)] mx-auto rounded" />
         </AnimatedSection>
         
         <StaggerChildren className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
           {services.map((service, i) => {
             const Icon = iconMap[service.icon]
             return (
-              <TiltCard key={i} className="group glass rounded-2xl p-8 text-center hover:glow transition-all duration-500">
-                  <div className={`w-16 h-16 mx-auto mb-6 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300`} style={{background: 'linear-gradient(135deg, rgba(56,189,248,0.08), rgba(34,211,238,0.06))'}}>
+              <TiltCard key={i} className="group glass rounded-2xl p-8 text-center hover:glow transition-all duration-500 border border-white/5">
+                  <div className="w-16 h-16 mx-auto mb-6 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300" style={{background: 'linear-gradient(135deg, rgba(37,99,235,0.14), rgba(96,165,250,0.08))'}}>
                   {Icon ? <Icon size={28} className="text-white" /> : null}
                 </div>
                 <h3 className="text-xl font-semibold mb-3 text-white">{service.title}</h3>

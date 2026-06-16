@@ -6,22 +6,22 @@ export default function Skills() {
   const skills = skillsData
 
   return (
-    <section id="skills" className="py-24 section-gradient-light">
-      <div className="max-w-7xl mx-auto px-6">
-        <AnimatedSection className="text-center mb-16">
+    <section id="skills" className="py-24 section-gradient-light relative overflow-hidden">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6">
+        <AnimatedSection className="text-center mb-16 max-w-3xl mx-auto">
           <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass text-[var(--body-text)] text-sm font-medium mb-4">
             <Sparkles size={14} className="mr-1 text-[var(--accent-icon)]" />
             My Toolbox
           </span>
           <h2 className="text-4xl lg:text-5xl font-bold mb-4 text-white">Skills & Technologies</h2>
-          <div className="w-20 h-1 mx-auto rounded" style={{background: 'var(--accent-icon)'}} />
+          <div className="w-20 h-1 mx-auto rounded" style={{background: 'var(--accent-cyan)'}} />
         </AnimatedSection>
         
         <StaggerChildren className="grid md:grid-cols-2 lg:grid-cols-3 gap-6" staggerDelay={100}>
           {skills.map((category, index) => (
             <div 
               key={index}
-              className="glass rounded-2xl p-6 hover:border-[var(--accent-icon)] transition-all duration-300 hover:-translate-y-1"
+              className="glass rounded-2xl p-6 hover:border-[var(--accent-icon)] transition-all duration-300 hover:-translate-y-1 border border-white/5"
             >
               <h3 className="text-lg font-semibold text-white mb-6 pb-3 border-b border-white/10">
                 {category.title}

@@ -1,7 +1,7 @@
 import { useState, useRef } from 'react'
 import gsap from 'gsap'
 
-export function MagneticButton({ children, className = "", strength = 0.3 }) {
+export function MagneticButton({ children, className = "", strength = 0.3, onClick }) {
   const buttonRef = useRef(null)
   
   const handleMouseMove = (e) => {
@@ -32,8 +32,10 @@ export function MagneticButton({ children, className = "", strength = 0.3 }) {
   return (
     <button
       ref={buttonRef}
+      type="button"
       onMouseMove={handleMouseMove}
       onMouseLeave={handleMouseLeave}
+      onClick={onClick}
       className={className}
     >
       {children}
@@ -118,7 +120,7 @@ export function GlowCursor({ children, className = "" }) {
       <div
         ref={glowRef}
         className="absolute w-[300px] h-[300px] rounded-full blur-3xl pointer-events-none opacity-0 group-hover:opacity-100 transition-opacity duration-300"
-        style={{ background: 'linear-gradient(90deg, rgba(56,189,248,0.12), rgba(34,211,238,0.08))', transform: 'translate(-50%, -50%)' }}
+        style={{ background: 'linear-gradient(90deg, rgba(37,99,235,0.12), rgba(96,165,250,0.08))', transform: 'translate(-50%, -50%)' }}
       />
       {children}
     </div>
@@ -166,6 +168,7 @@ export function RippleButton({ children, className = "", onClick }) {
   return (
     <button
       ref={buttonRef}
+      type="button"
       onClick={createRipple}
       className={`relative overflow-hidden ${className}`}
     >

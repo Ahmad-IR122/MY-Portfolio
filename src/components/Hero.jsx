@@ -1,11 +1,12 @@
-import { useEffect, useRef } from "react";
+import { lazy, Suspense, useEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import Scene3D from "./Scene3D";
 import { MagneticButton, RippleButton } from "./MicroInteractions";
 import { Download, Mail, Github, Linkedin, ChevronDown } from "lucide-react";
 
 gsap.registerPlugin(ScrollTrigger);
+
+const Scene3D = lazy(() => import('./Scene3D'));
 
 export default function Hero() {
   const heroRef = useRef(null);
@@ -47,12 +48,20 @@ export default function Hero() {
       className="relative min-h-screen flex items-center pt-20 section-gradient"
     >
       <div className="absolute inset-0 z-0">
-        <Scene3D className="opacity-60" />
+        <Suspense
+          fallback={
+            <div className="w-full h-full relative overflow-hidden">
+              <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(37,99,235,0.14),transparent_55%)]" />
+            </div>
+          }
+        >
+          <Scene3D className="opacity-60" />
+        </Suspense>
       </div>
 
       <div className="absolute inset-0 z-10" style={{pointerEvents: 'none'}} />
 
-      <div className="relative z-20 max-w-7xl mx-auto px-6 py-20 grid lg:grid-cols-2 gap-12 items-center">
+      <div className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 py-20 grid lg:grid-cols-2 gap-12 items-center">
         <div>
           <div className="hero-badge inline-flex items-center gap-2 px-4 py-2 rounded-full glass text-[var(--body-text)] text-sm font-medium mb-6">
             <span className="w-2 h-2 bg-[var(--accent-cyan)] rounded-full animate-pulse" />
@@ -76,24 +85,21 @@ export default function Hero() {
           </p>
 
           <div className="hero-text flex flex-wrap gap-4 mb-10">
-            <a
-              href="https://drive.google.com/file/d/17h25TGPMpxMEIt6N9SL-9mH5z1JA_Zvg/view"
-              target="_blank"
-              rel="noopener noreferrer"
-              
+            <RippleButton
+              onClick={() => window.open('https://drive.google.com/file/d/17h25TGPMpxMEIt6N9SL-9mH5z1JA_Zvg/view', '_blank', 'noopener,noreferrer')}
+              className="group relative flex items-center gap-2 px-8 py-4 rounded-xl font-semibold transition-all duration-300 bg-[linear-gradient(135deg,#2563eb,#3b82f6)] shadow-lg shadow-blue-900/25 hover:shadow-xl hover:shadow-blue-900/30 hover:-translate-y-1"
             >
-              <RippleButton className="group flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-[#38bdf8] to-[#22d3ee] rounded-xl font-semibold transition-all duration-300 hover:shadow-lg hover:shadow-[0_12px_24px_rgba(34,211,238,0.12)] hover:-translate-y-1">
-                <Download size={18} />
-                <span>View CV</span>
-              </RippleButton>
-            </a>
+              <Download size={18} />
+              <span>View CV</span>
+            </RippleButton>
 
-            <a href="#contact">
-              <MagneticButton className="flex items-center gap-2 px-8 py-4 glass rounded-xl font-semibold hover:border-[var(--accent-cyan)] transition-all duration-300">
-                <Mail size={18} />
-                <span>Contact Me</span>
-              </MagneticButton>
-            </a>
+            <MagneticButton
+              onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth', block: 'start' })}
+              className="flex items-center gap-2 px-8 py-4 glass rounded-xl font-semibold border border-white/10 hover:border-[var(--accent-cyan)] hover:bg-white/5 transition-all duration-300"
+            >
+              <Mail size={18} />
+              <span>Contact Me</span>
+            </MagneticButton>
           </div>
 
           <div className="hero-text flex gap-4">
@@ -119,7 +125,7 @@ export default function Hero() {
 
         <div className="hidden lg:flex justify-center items-center">
             <div className="relative">
-            <div className="absolute -inset-10 bg-[rgba(56,189,248,0.06)] blur-3xl rounded-full" />
+            <div className="absolute -inset-10 bg-[rgba(37,99,235,0.08)] blur-3xl rounded-full" />
             <div className="relative glass rounded-2xl p-8 glow">
               <div className="flex items-center gap-4 mb-6">
                 <div className="flex gap-2">
@@ -134,7 +140,7 @@ export default function Hero() {
               <div className="font-mono text-sm space-y-2">
                 <p>
                   <span className="text-[var(--accent-cyan)]">$</span>{" "}
-                  <span className="text-white">AhmaIR</span>
+                  <span className="text-white">AhmadIR</span>
                 </p>
                 <p className="text-[var(--body-text)]">
                   <span className="text-[var(--accent-cyan)]">name:</span> "Ahmad Irshaid"
@@ -161,7 +167,7 @@ export default function Hero() {
       <div className="absolute bottom-10 left-1/2 -translate-x-1/2 z-20">
         <a
           href="#about"
-          className="flex flex-col items-center gap-2 text-[var(--body-text)] hover:text-white transition-colors"
+          className="flex flex-col items-center gap-2 text-[var(--body-text)] hover:text-white transition-colors focus-visible:text-white"
         >
           <span className="text-sm">Scroll Down</span>
           <ChevronDown size={20} className="animate-bounce" />

@@ -4,19 +4,19 @@ import { Mail, Phone, MapPin, Github, Linkedin, Twitter } from 'lucide-react'
 
 export default function Contact() {
   return (
-    <section id="contact" className="py-12 section-gradient-light">
-      <div className="max-w-4xl mx-auto px-6">
-        <AnimatedSection className="text-center mb-16">
+    <section id="contact" className="py-20 section-gradient-light overflow-hidden">
+      <div className="max-w-5xl mx-auto px-4 sm:px-6">
+        <AnimatedSection className="text-center mb-16 max-w-3xl mx-auto">
           <h2 className="text-4xl lg:text-5xl font-bold mb-4">Let's Connect</h2>
-          <div className="w-20 h-1 bg-accent-cyan mx-auto rounded mb-6" />
-          <p className="text-[var(--body-text)] text-lg max-w-2xl mx-auto">
+          <div className="w-20 h-1 bg-[var(--accent-cyan)] mx-auto rounded mb-6" />
+          <p className="text-[var(--body-text)] text-lg max-w-2xl mx-auto leading-8">
             I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.
           </p>
         </AnimatedSection>
         
         <StaggerChildren className="grid md:grid-cols-2 gap-6 mb-8" staggerDelay={100}>
-          <div className="glass rounded-2xl p-6 flex items-center gap-5 hover:border-[var(--accent-icon)] transition-all duration-300 group">
-            <div className="w-14 h-14 rounded-xl bg-[rgba(56,189,248,0.06)] border flex items-center justify-center" style={{borderColor: 'rgba(255,255,255,0.06)'}}>
+          <div className="glass rounded-2xl p-6 flex items-center gap-5 hover:border-[var(--accent-icon)] transition-all duration-300 group border border-white/5">
+            <div className="w-14 h-14 rounded-xl bg-[rgba(37,99,235,0.08)] border flex items-center justify-center" style={{borderColor: 'rgba(255,255,255,0.06)'}}>
               <Mail size={20} className="text-[var(--accent-icon)]" />
             </div>
             <div>
@@ -25,8 +25,8 @@ export default function Contact() {
             </div>
           </div>
           
-          <div className="glass rounded-2xl p-6 flex items-center gap-5 hover:border-[var(--accent-icon)] transition-all duration-300 group">
-            <div className="w-14 h-14 rounded-xl bg-[rgba(56,189,248,0.06)] border flex items-center justify-center" style={{borderColor: 'rgba(255,255,255,0.06)'}}>
+          <div className="glass rounded-2xl p-6 flex items-center gap-5 hover:border-[var(--accent-icon)] transition-all duration-300 group border border-white/5">
+            <div className="w-14 h-14 rounded-xl bg-[rgba(37,99,235,0.08)] border flex items-center justify-center" style={{borderColor: 'rgba(255,255,255,0.06)'}}>
               <Phone size={20} className="text-[var(--accent-icon)]" />
             </div>
             <div>
@@ -37,8 +37,8 @@ export default function Contact() {
         </StaggerChildren>
         
         <AnimatedSection>
-          <div className="glass rounded-2xl p-6 flex items-center gap-5 hover:border-[var(--accent-icon)] transition-all duration-300 group max-w-md">
-            <div className="w-14 h-14 rounded-xl bg-[rgba(56,189,248,0.06)] border flex items-center justify-center" style={{borderColor: 'rgba(255,255,255,0.06)'}}>
+          <div className="glass rounded-2xl p-6 flex items-center gap-5 hover:border-[var(--accent-icon)] transition-all duration-300 group max-w-md border border-white/5">
+            <div className="w-14 h-14 rounded-xl bg-[rgba(37,99,235,0.08)] border flex items-center justify-center" style={{borderColor: 'rgba(255,255,255,0.06)'}}>
               <MapPin size={20} className="text-[var(--accent-icon)]" />
             </div>
             <div>
@@ -49,7 +49,7 @@ export default function Contact() {
         </AnimatedSection>
         
         <AnimatedSection className="mt-12 text-center">
-          <div className="flex justify-center gap-4">
+          <div className="flex justify-center gap-4 flex-wrap">
             {[
               { icon: Github, label: "GitHub", href:"https://github.com/Ahmad-IR122" },
               { icon: Linkedin, label: "LinkedIn", href:"https://www.linkedin.com/in/ahmadikirshaid/" },
@@ -57,7 +57,8 @@ export default function Contact() {
               <a 
                 key={i} 
                 href={social.href}
-                className={`w-12 h-12 flex items-center justify-center glass rounded-xl text-[var(--muted-text)] hover:text-white hover:border-[var(--accent-icon)] transition-all duration-300 hover:-translate-y-1`}
+                aria-label={social.label}
+                className="w-12 h-12 flex items-center justify-center glass rounded-xl text-[var(--muted-text)] hover:text-white hover:border-[var(--accent-icon)] transition-all duration-300 hover:-translate-y-1 border border-white/5"
               >
                 <social.icon size={20} />
               </a>

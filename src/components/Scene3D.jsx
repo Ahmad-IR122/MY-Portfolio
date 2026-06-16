@@ -108,7 +108,7 @@ function FloatingCube({ position, color, size = 0.8 }) {
 }
 
 function ParticleField() {
-  const count = 200
+  const count = 120
   const positions = useMemo(() => {
     const pos = new Float32Array(count * 3)
     for (let i = 0; i < count; i++) {
@@ -140,7 +140,7 @@ function ParticleField() {
       </bufferGeometry>
       <pointsMaterial
         size={0.05}
-        color="#38bdf8"
+        color="#2563eb"
         transparent
         opacity={0.8}
         sizeAttenuation
@@ -152,10 +152,10 @@ function ParticleField() {
 function Fallback() {
   return (
     <div className="w-full h-full flex items-center justify-center relative overflow-hidden">
-      <div className="absolute inset-0" style={{background: 'linear-gradient(180deg, rgba(5,5,10,0.6), rgba(10,15,61,0.4))'}} />
-      <div className="absolute w-96 h-96 rounded-full blur-3xl animate-pulse" style={{ background: 'linear-gradient(90deg, rgba(56,189,248,0.06), rgba(34,211,238,0.04))' }} />
-      <div className="absolute w-64 h-64 rounded-full blur-3xl animate-pulse" style={{ background: 'linear-gradient(90deg, rgba(34,211,238,0.06), rgba(56,189,248,0.04))', animationDelay: '1s', top: '20%', left: '60%' }} />
-      <div className="absolute w-48 h-48 rounded-full blur-3xl animate-pulse" style={{ background: 'linear-gradient(90deg, rgba(56,189,248,0.05), rgba(34,211,238,0.03))', animationDelay: '2s', bottom: '20%', right: '60%' }} />
+      <div className="absolute inset-0" style={{background: 'linear-gradient(180deg, rgba(2,6,23,0.6), rgba(15,23,42,0.4))'}} />
+      <div className="absolute w-96 h-96 rounded-full blur-3xl animate-pulse" style={{ background: 'linear-gradient(90deg, rgba(37,99,235,0.08), rgba(96,165,250,0.04))' }} />
+      <div className="absolute w-64 h-64 rounded-full blur-3xl animate-pulse" style={{ background: 'linear-gradient(90deg, rgba(59,130,246,0.06), rgba(37,99,235,0.04))', animationDelay: '1s', top: '20%', left: '60%' }} />
+      <div className="absolute w-48 h-48 rounded-full blur-3xl animate-pulse" style={{ background: 'linear-gradient(90deg, rgba(37,99,235,0.06), rgba(96,165,250,0.03))', animationDelay: '2s', bottom: '20%', right: '60%' }} />
     </div>
   )
 }
@@ -168,25 +168,25 @@ function Scene3DCanvas() {
         antialias: true, 
         alpha: true, 
         failIfMajorPerformanceCaveat: false,
-        powerPreference: 'default'
+        powerPreference: 'high-performance'
       }}
-      dpr={[1, 2]}
+      dpr={[1, 1.5]}
       onCreated={({ gl }) => {
-        gl.setClearColor('#0a0a0f', 0)
+        gl.setClearColor('#0a0a0a', 0)
       }}
     >
-      <color attach="background" args={['#0a0a0f']} />
+      <color attach="background" args={['#0a0a0a']} />
       
       <ambientLight intensity={0.2} />
       <directionalLight position={[10, 10, 5]} intensity={1} color="#ffffff" />
-      <pointLight position={[-5, 5, 5]} intensity={0.5} color="#6366f1" />
-      <pointLight position={[5, -5, 5]} intensity={0.5} color="#22d3ee" />
+      <pointLight position={[-5, 5, 5]} intensity={0.5} color="#2563eb" />
+      <pointLight position={[5, -5, 5]} intensity={0.45} color="#60a5fa" />
       
-      <AnimatedSphere position={[0, 0, 0]} color="#38bdf8" distort={0.5} />
-      <GlowingTorus position={[3, 1, -2]} color="#22d3ee" rotationSpeed={0.7} />
+      <AnimatedSphere position={[0, 0, 0]} color="#2563eb" distort={0.5} />
+      <GlowingTorus position={[3, 1, -2]} color="#60a5fa" rotationSpeed={0.7} />
       <GlowingTorus position={[-3, -1, -2]} color="#60a5fa" rotationSpeed={0.5} />
-      <FloatingCube position={[2.5, -1.5, 1]} color="#22d3ee" size={0.6} />
-      <FloatingCube position={[-2.5, 1.5, 1]} color="#38bdf8" size={0.5} />
+      <FloatingCube position={[2.5, -1.5, 1]} color="#60a5fa" size={0.6} />
+      <FloatingCube position={[-2.5, 1.5, 1]} color="#2563eb" size={0.5} />
       
       <ParticleField />
       <Stars radius={50} depth={50} count={1000} factor={4} fade speed={1} />
