@@ -4,14 +4,14 @@ import { CheckCircle2, Sparkles } from 'lucide-react'
 
 export default function About() {
   return (
-    <section id="about" className="py-24 relative section-gradient-dark overflow-hidden">
+    <section id="about" className="py-24 relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
         <AnimatedSection className="text-center mb-16 max-w-3xl mx-auto">
           <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass text-[var(--body-text)] text-sm font-medium mb-4">
             <Sparkles size={16} className="text-[var(--accent-cyan)]" />
             About Me
           </span>
-          <h2 className="text-4xl lg:text-5xl font-bold mb-4 text-white">Passionate About Web development , Data Engineering and Problem Solving </h2>
+          <h2 className="text-4xl lg:text-5xl font-bold mb-4 text-white">Passionate About Web development ,Data Engineering and Problem Solving </h2>
           <div className="w-20 h-1 bg-[var(--accent-cyan)] mx-auto rounded" />
         </AnimatedSection>
         

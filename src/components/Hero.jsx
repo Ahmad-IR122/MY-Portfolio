@@ -45,7 +45,7 @@ export default function Hero() {
     <section
       id="home"
       ref={heroRef}
-      className="relative min-h-screen flex items-center pt-20 section-gradient"
+      className="relative min-h-screen flex items-center pt-20"
     >
       <div className="absolute inset-0 z-0">
         <Suspense

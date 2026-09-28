@@ -4,7 +4,7 @@ import { Mail, Phone, MapPin, Github, Linkedin, Twitter } from 'lucide-react'
 
 export default function Contact() {
   return (
-    <section id="contact" className="py-20 section-gradient-light overflow-hidden">
+    <section id="contact" className="py-20 overflow-hidden">
       <div className="max-w-5xl mx-auto px-4 sm:px-6">
         <AnimatedSection className="text-center mb-16 max-w-3xl mx-auto">
           <h2 className="text-4xl lg:text-5xl font-bold mb-4">Let's Connect</h2>

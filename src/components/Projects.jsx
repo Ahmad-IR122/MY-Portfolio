@@ -7,7 +7,7 @@ export default function Projects() {
   const projects = projectsData
 
   return (
-    <section id="projects" className="py-24 section-gradient relative overflow-hidden">
+    <section id="projects" className="py-24 relative overflow-hidden">
       <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-white/15 to-transparent" />
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
         <AnimatedSection className="text-center mb-16 max-w-3xl mx-auto">

@@ -14,17 +14,19 @@ import CertificationsSection from './sections/CertificationsSection'
 export default function App() {
   return (
     <>
-      <div className="min-h-screen bg-dark-400 text-white overflow-x-hidden relative isolate antialiased">
+      <div className="min-h-screen site-background text-white overflow-x-hidden relative isolate antialiased">
         <Navbar />
         <Hero />
-        <About />
-        <Services />
-        <Skills />
-        <Projects />
-        <InternshipsSection />
-        <EducationSection />
-        <CertificationsSection />
-        <Contact />
+        <main className="stars-background">
+          <About />
+          <Services />
+          <Skills />
+          <Projects />
+          <InternshipsSection />
+          <EducationSection />
+          <CertificationsSection />
+          <Contact />
+        </main>
         <Footer />
       </div>
     </>

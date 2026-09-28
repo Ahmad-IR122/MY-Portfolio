@@ -5,7 +5,7 @@ export default function CertificationsSection() {
   const certifications = certificationsData
     
   return (
-    <section id="certifications" className="py-16 relative section-gradient-dark overflow-hidden">
+    <section id="certifications" className="py-16 relative overflow-hidden">
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <AnimatedSection className="text-center mb-10 max-w-3xl mx-auto">
           <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass text-[var(--body-text)] text-sm font-medium mb-4">

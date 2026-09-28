@@ -1,5 +1,13 @@
 [
   {
+    "title" : "Miles ",
+    "description" : "full-stack AI travel planning platform designed to help users create, manage, and improve personalized trips. The platform combines a React frontend, a FastAPI backend, and a separate FastAPI AI service to provide itinerary generation, contextual chat, travel recommendations, trip management, and cloud-backed data processing.", 
+    "tech" : ["React","TypeScript","Vite","React Router","Material UI","Griffel", "FastAPI", "Azure AI Services", "Supabase", "Clerk Authentication"],
+    "category" : "Full Stack APP",
+    "gradient" : "from-blue-500 to-green-500",
+    "github" : "https://github.com/Ahmad-IR122/Miles"
+  },
+  {
     "title" : "🚚 Phoenix Express for delivery and logistics management ",
     "description" : "full-stack delivery management platform built with PostgreSQL, Express, React, and Node.js. It supports multi-role workflows (customer/company, employee, and admin), shipment tracking, delivery operations, settlements/wallet flows, content management, newsletters, support chat, and notifications.", 
     "tech" : ["PostgreSQL", "Express", "React", "Node.js"],

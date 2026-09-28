@@ -1,5 +1,29 @@
 [
     {
+      "name": "Introduction to Model Context Protocol ",
+      "organization": "Claude Academy",
+      "year": "Sep 2026",
+      "verified": true
+    },
+    {
+      "name": "AWS AI Practitioner Challenge",
+      "organization": "Udacity",
+      "year": "Apr 2026",
+      "verified": true
+    },
+    {
+      "name": "Full Stack JavaScript Development",
+      "organization": "Udacity",
+      "year": "Apr 2026",
+      "verified": true
+    },
+    {
+      "name": "Data Engineer Associate",
+      "organization": "DataCamp",
+      "year": "Feb 2026",
+      "verified": true
+    },
+    {
       "name": "Data Literacy ",
       "organization": "DataCamp",
       "year": "Dec 2025",

@@ -32,7 +32,7 @@ export default function InternshipsSection() {
   const internships =internshipsData
 
   return (
-    <section id="internships" className="py-16 relative section-gradient-dark overflow-hidden" ref={sectionRef}>
+    <section id="internships" className="py-16 relative overflow-hidden" ref={sectionRef}>
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <AnimatedSection className="text-center mb-10 max-w-3xl mx-auto">
           <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass text-[var(--body-text)] text-sm font-medium mb-4">

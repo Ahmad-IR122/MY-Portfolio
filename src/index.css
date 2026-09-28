@@ -110,4 +110,43 @@ summary {
   .section-gradient-light {
     background: linear-gradient(180deg, #06070b 0%, #0b1220 50%, #172554 100%);
   }
+
+  .site-background {
+    background: linear-gradient(180deg, var(--gradient-top) 0%, var(--gradient-mid) 50%, var(--gradient-bottom) 100%);
+  }
+
+  .stars-background {
+    background-image:
+      radial-gradient(circle, rgba(255, 255, 255, 0.5) 0 1px, transparent 1.4px),
+      radial-gradient(circle, rgba(147, 197, 253, 0.38) 0 1px, transparent 1.5px),
+      radial-gradient(circle, rgba(255, 255, 255, 0.24) 0 1.2px, transparent 1.7px);
+    background-position: 18px 24px, 74px 112px, 138px 46px;
+    background-size: 127px 149px, 211px 193px, 283px 251px;
+    background-repeat: repeat;
+    animation: stars-drift 45s linear infinite;
+  }
+}
+
+@keyframes stars-drift {
+  0% {
+    background-position: 18px 24px, 74px 112px, 138px 46px;
+  }
+  25% {
+    background-position: 82px -50px, 18px 168px, 198px 96px;
+  }
+  50% {
+    background-position: 146px 24px, -38px 112px, 138px 146px;
+  }
+  75% {
+    background-position: 82px 98px, 18px 56px, 78px 96px;
+  }
+  100% {
+    background-position: 18px 24px, 74px 112px, 138px 46px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .stars-background {
+    animation: none;
+  }
 }

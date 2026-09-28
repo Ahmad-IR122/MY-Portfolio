@@ -1,11 +1,12 @@
 [
+    
     {
-      "role": "Backend Intern",
-      "company": "ITG Software, Inc.",
-      "logo": "ITG",
-      "date": "Jul – Sep 2025",
+      "role": "AI Software Engineering Intern",
+      "company": "ASAL Technologies",
+      "logo": "ASAL",
+      "date": "Jul - Sep 2026",
       "achievements": [
-        "Backend development using Django and SQLite"
+        "Participated in project-based software engineering training focused on Azure AI, FastAPI, Azure DevOps, Agile workflows, and full-stack application development."
       ]
     },
     {
@@ -15,6 +16,14 @@
       "date": "Sep – Dec 2025",
       "achievements": [
         "frontend development using React.js"
+      ]
+    },{
+      "role": "Backend Intern",
+      "company": "ITG Software, Inc.",
+      "logo": "ITG",
+      "date": "Jul – Sep 2025",
+      "achievements": [
+        "Backend development using Django and SQLite"
       ]
     }
   ]
