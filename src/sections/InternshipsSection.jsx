@@ -39,7 +39,7 @@ export default function InternshipsSection() {
             <Briefcase size={16} className="text-[var(--accent-cyan)]" />
             Experience
           </span>
-          <h2 className="text-3xl lg:text-4xl font-bold mb-4 text-white">Internships</h2>
+          <h2 className="text-3xl lg:text-4xl font-bold mb-4 text-white">Experience</h2>
           <div className="w-20 h-1 bg-[var(--accent-cyan)] mx-auto rounded" />
         </AnimatedSection>
 
