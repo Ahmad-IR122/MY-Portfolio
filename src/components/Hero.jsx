@@ -77,7 +77,7 @@ export default function Hero() {
           </h2>
 
           <p className="hero-text text-[var(--body-text)] text-lg max-w-xl mb-8 leading-relaxed">
-            Software Engineering student at An-Najah National University with a
+            Software Engineering graduate from An-Najah National University with a
             strong foundation in full-stack development, data engineering, and
             modern web technologies. Skilled in React.js, Node.js, Django, and
             Apache Spark. Passionate about building impactful software solutions

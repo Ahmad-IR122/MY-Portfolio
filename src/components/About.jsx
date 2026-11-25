@@ -30,7 +30,7 @@ export default function About() {
               </div>
               <div>
                 <p className="text-xl text-[var(--body-text)] mb-4 leading-relaxed">
-                  <span className="text-gradient">Software Engineering student</span> | Full-Stack Developer | Passionate About Web development and Problem Solving | React & Django
+                  <span className="text-gradient">Software Engineer at KYAN-HR</span> | Full-Stack Developer | Passionate About Web development and Problem Solving | React & Django
                 </p>
               </div>
             </div>
