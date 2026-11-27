@@ -7,7 +7,7 @@ import Skills from './components/Skills'
 import Projects from './components/Projects'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
-import InternshipsSection from './sections/InternshipsSection'
+import ExperienceSection from './sections/experienceSection'
 import EducationSection from './sections/EducationSection'
 import CertificationsSection from './sections/CertificationsSection'
 
@@ -22,7 +22,7 @@ export default function App() {
           <Services />
           <Skills />
           <Projects />
-          <InternshipsSection />
+          <ExperienceSection />
           <EducationSection />
           <CertificationsSection />
           <Contact />

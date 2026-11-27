@@ -2,7 +2,7 @@ import { lazy, Suspense, useEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { MagneticButton, RippleButton } from "./MicroInteractions";
-import { Download, Mail, Github, Linkedin, ChevronDown } from "lucide-react";
+import { Eye, Mail, Github, Linkedin, ChevronDown } from "lucide-react";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -86,10 +86,10 @@ export default function Hero() {
 
           <div className="hero-text flex flex-wrap gap-4 mb-10">
             <RippleButton
-              onClick={() => window.open('https://drive.google.com/file/d/1BJf8vhtex1EuvYA5YbqK6V8GjMqOAw8X/view?usp=sharing', '_blank', 'noopener,noreferrer')}
-              className="group relative flex items-center gap-2 px-8 py-4 rounded-xl font-semibold transition-all duration-300 bg-[linear-gradient(135deg,#2563eb,#3b82f6)] shadow-lg shadow-blue-900/25 hover:shadow-xl hover:shadow-blue-900/30 hover:-translate-y-1"
+              onClick={() => window.open('https://drive.google.com/file/d/1qgikOdhG3-LPT7FHcHmDhancNVmRcX_N/view?usp=sharing', '_blank', 'noopener,noreferrer')}
+              className="flex items-center gap-2 px-8 py-4 rounded-xl font-semibold transition-all duration-300 bg-[linear-gradient(135deg,#2563eb,#3b82f6)] shadow-lg shadow-blue-900/25 hover:shadow-xl hover:shadow-blue-900/30 hover:-translate-y-1"
             >
-              <Download size={18} />
+              <Eye size={18} />
               <span>View CV</span>
             </RippleButton>
 

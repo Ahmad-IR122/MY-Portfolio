@@ -1,33 +1,11 @@
 import { useEffect, useRef, useState } from 'react'
-import { Briefcase, Building2, Calendar, CheckCircle2, Sparkles } from 'lucide-react'
+import { Briefcase } from 'lucide-react'
 import AnimatedSection from '../components/AnimatedSection'
 import internshipsData from '../internships.json'
-function useInView(ref, threshold = 0.2) {
-  const [isInView, setIsInView] = useState(false)
-  
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          setIsInView(true)
-        }
-      },
-      { threshold }
-    )
-    
-    if (ref.current) {
-      observer.observe(ref.current)
-    }
-    
-    return () => observer.disconnect()
-  }, [ref, threshold])
-  
-  return isInView
-}
+
 
 export default function InternshipsSection() {
   const sectionRef = useRef(null)
-  const isInView = useInView(sectionRef)
 
   const internships =internshipsData
 
