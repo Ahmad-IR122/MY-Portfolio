@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from 'react'
 import { Briefcase } from 'lucide-react'
 import AnimatedSection from '../components/AnimatedSection'
-import internshipsData from '../internships.json'
+import internshipsData from '../experience.json'
 
 
 export default function InternshipsSection() {
